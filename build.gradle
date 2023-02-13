@@ -84,7 +84,7 @@ loom {
 		gametest {
 			server()
 			name = "Headless Game Test Server"
-			vmArg "-Dfabric-api.gametest"
+			property("quilt.game_test", "true")
 			runDir "build/gametest"
 			source = project.sourceSets.gametest
 		}
@@ -92,6 +92,7 @@ loom {
 		gametestClient {
 			client()
 			name = "Game Test Client"
+			property("quilt.game_test.command", "true")
 			source = project.sourceSets.gametest
 		}
 	}

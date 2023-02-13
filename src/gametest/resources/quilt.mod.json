@@ -14,7 +14,7 @@
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"fabric-gametest": [
+			"quilt:game_test": [
 				"com.example.example_mod.test.ExampleModTests"
 			]
 		},
